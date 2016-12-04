@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
                     if (charRead<=0){
                         break;
                     }
-                    builder.append(String.copyValueOf(inputBuffer));
+                    builder.append(String.copyValueOf(inputBuffer,0, charRead));
                 }
                 return builder.toString();
             }catch (IOException e){
